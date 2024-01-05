@@ -41,11 +41,9 @@ result = msg_box.exec_()
 
 # If the user clicked "OK"
 if result == QMessageBox.Ok:
-    print("Applying mm scale factor to transformations")
     scalefactor = 0.001
     
 if result == QMessageBox.Cancel:
-    print("Applying mm scale factor to transformations")
     scalefactor = 1
 
 pattern = r'(-?\d+(?:\.\d+)?(?:\s+-?\d+(?:\.\d+)?){15})'
